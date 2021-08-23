@@ -3,7 +3,8 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/sdomino/scribble"
+
+	"github.com/torfason/scribble"
 )
 
 // a fish
@@ -43,6 +44,8 @@ func main() {
 		}
 		fishies = append(fishies, fishFound)
 	}
+
+	fmt.Println(fishies)
 
 	// // Delete a fish from the database
 	// if err := db.Delete("fish", "onefish"); err != nil {
